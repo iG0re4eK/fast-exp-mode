@@ -118,21 +118,25 @@ function fastExpMode(a, x, n) {
 
     if (s === 1) {
       solve += `<div class="condition">Условие (s == 1) выполняется , значит:</div>`;
+
+      const oldP = p;
       p = (p * a) % n;
-      solve += `<div class="condition-action">p = (p * a) % n = (${p} * ${a}) % ${n} = (${
-        p * a
-      }) % ${n} = ${p}</div>`;
+      solve += `<div class="condition-action">p = (p * a) % n = (${oldP} * ${a}) % ${n} = ${
+        oldP * a
+      } % ${n} = ${p}</div>`;
     }
 
+    const oldA = a;
     a = (a * a) % n;
-    solve += `<div>a = (a * a) % n = (${a} * ${a}) % ${n} = (${
-      a * a
-    }) % ${n} = ${a}</div>`;
+    solve += `<div>a = (a * a) % n = (${oldA} * ${oldA}) % ${n} = ${
+      oldA * oldA
+    } % ${n} = ${a}</div>`;
 
+    const oldI = i;
     i = (i - s) / 2;
-    solve += `<div>i = (i - s) / 2 = (${i} - ${s}) / 2 = (${
-      i - s
-    }) / 2 = ${i}</div>`;
+    solve += `<div>i = (i - s) / 2 = (${oldI} - ${s}) / 2 = ${
+      oldI - s
+    } / 2 = ${i}</div>`;
 
     count++;
   }
