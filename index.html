@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Алгоритм быстрого возведения в степень по модулю</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Алгоритм быстрого возведения в степень по модулю</h1>
+
+      <main>
+        <form id="form">
+          <div class="field">
+            <label for="aValue">a = <input type="text" name="aValue" /></label>
+          </div>
+          <div class="field">
+            <label for="xValue">x = <input type="text" name="xValue" /></label>
+          </div>
+          <div class="field">
+            <label for="nValue">n = <input type="text" name="nValue" /></label>
+          </div>
+
+          <button type="submit" id="AnswearBtn">Ответ</button>
+        </form>
+
+        <div id="example">a<sup>x</sup> mod n</div>
+
+        <div>
+          <p>p = 1</p>
+          <p>i = x (если x == -1 то берем n - 2 если p у нас простое число)</p>
+          <p>Пока i > 0</p>
+          <p class="indent-1">s = i % 2</p>
+          <p class="indent-1">Если s == 1 то:</p>
+          <p class="indent-2">p = (p * a) % n</p>
+          <p class="indent-1">a = (a * a) % n</p>
+          <p class="indent-1">i = (i - s) / 2</p>
+        </div>
+
+        <div id="output"></div>
+      </main>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

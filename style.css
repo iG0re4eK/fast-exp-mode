@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(190, 190, 190);
+  min-height: 100vh;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h1 {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 400px;
+
+  input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    border: none;
+    transition: 0.05s ease;
+
+    &:focus {
+      outline: 2px solid gray;
+    }
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  text-align: end;
+  margin-top: 5px;
+}
+
+.error-input {
+  background-color: rgb(255, 182, 182);
+  color: red;
+  border: 1px solid red;
+}
+
+#AnswearBtn {
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  padding: 0.5rem 0;
+  border-radius: 0.2rem;
+}
+
+#example {
+  text-align: center;
+}
+
+.indent-1 {
+  margin-left: 20px;
+}
+.indent-2 {
+  margin-left: 40px;
+}
+
+#output {
+  border-top: 1px solid black;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.step {
+  color: white;
+  border-radius: 0.4rem 0 0 0.4rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to right,
+    rgb(34, 34, 34),
+    rgba(255, 255, 255, 0)
+  );
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.condition {
+  margin: 0.5rem 0;
+}
+
+.condition-action {
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  animation: pulseAnim 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseAnim {
+  0%,
+  100% {
+    color: black;
+  }
+  50% {
+    color: rgb(173, 0, 0);
+  }
+}
