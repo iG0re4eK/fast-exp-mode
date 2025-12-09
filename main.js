@@ -132,7 +132,7 @@ function fastExpMode(a, x, n) {
     i = (i - s) / 2;
     solve += `<div>i = (i - s) / 2 = (${i} - ${s}) / 2 = (${
       i - s
-    }) / 2 = ${p}</div>`;
+    }) / 2 = ${i}</div>`;
 
     count++;
   }
