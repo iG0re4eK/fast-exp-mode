@@ -12,7 +12,7 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(255, 255, 255);
   min-height: 100vh;
 }
 
@@ -47,7 +47,7 @@ form {
     transition: 0.05s ease;
 
     &:focus {
-      outline: 2px solid gray;
+      outline: 2px solid rgb(84, 167, 255);
     }
   }
 }
@@ -81,13 +81,6 @@ form {
 .example-step {
   line-height: 2.3rem;
   font-size: 1.1rem;
-}
-
-.cell-background {
-  background-color: #fff;
-  background-image: linear-gradient(rgba(0, 150, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 150, 255, 0.3) 1px, transparent 1px);
-  background-size: 30px 30px;
 }
 
 .indent-1 {
