@@ -95,6 +95,7 @@ form {
   font-size: 1.1rem;
   border-top: 1px solid black;
   display: flex;
+  margin-left: 2rem;
   flex-direction: column;
 }
 
@@ -102,6 +103,9 @@ form {
   color: white;
   border-radius: 0.4rem 0 0 0.4rem;
   padding: 0.5rem;
+  margin-top: 4rem;
+  margin-left: -2rem;
+  margin-bottom: 1rem;
   background: linear-gradient(
     to right,
     rgb(34, 34, 34),
